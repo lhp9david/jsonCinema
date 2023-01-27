@@ -5,7 +5,7 @@
 h1 {
     text-align: center;
     padding: 1em;
-    color: white;
+    color: black;
 }
 
 .grid {
@@ -50,6 +50,7 @@ img {
 .description {
     height: 11em;
     overflow: auto;
+    word-wrap: break-word;
 }
 
 .star {

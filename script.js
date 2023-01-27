@@ -1,4 +1,4 @@
-
+// recupere les données du fichier json avec api fetch
 fetch('movies.json')
     .then(res => {
         if (res.ok) {
@@ -6,6 +6,7 @@ fetch('movies.json')
         }
     })
     .then(data => {
+        //fonction pour calculer les étoiles
         function calcStars(rating) {
 
             let rate = rating / 2
@@ -21,6 +22,8 @@ fetch('movies.json')
                 return (`<img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt=""><img src="img/star.png" alt="">`)
             }
         }
+
+        // boucle pour afficher les données
         data.results.forEach(element => {
 
             const newDiv = document.createElement('div');
