@@ -5,13 +5,15 @@
 h1 {
     text-align: center;
     padding: 1em;
+    color: white;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2em;
-    margin: auto 5em;
+    margin: auto ;
+    padding: 1em;
 
 }
 
